@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COPAINS REFERRAL</title>
+    <link rel="icon" href="./media/logo1.png">
+    <!--  Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white">
+    <!-- Header Section -->
+    <header class="bg-white shadow-md py-4 w-full z-50 fixed">
+        <div class=" bg-white flex flex-row-reverse px-10 font-semibold text-blue-600">
+            Tel:+254115256304 | Email:Info@Copains.co.ke
+        </div>
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./media/logo2.png" alt="logo" class="h-20 w-16">
+                <h2 class="font-bold text-3xl ml-2 text-blue-600">COPAINS <span class="text-black">REFERRAL</span> Hospital</h2>
+            </div>
+            <nav>
+                <ul class="flex space-x-6 font-bold">
+                    <li><a href="index.html" class="text-gray-800 hover:text-blue-600">HOME</a></li>
+                    <li><a href="#about-us" class="text-gray-800 hover:text-blue-600">ABOUT US</a></li>
+                    <li><a href="#events" class="text-gray-800 hover:text-blue-600">EVENTS</a></li>
+                    <li><a href="#department" class="text-gray-800 hover:text-blue-600">DEPARTMENTS</a></li>
+                    <li><a href="#contact-us" class="text-gray-800 hover:text-blue-600">CONTACT US</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Homepage Section with Wallpaper -->
+    <section class="bg-cover bg-center bg-fixed h-screen" style="background-image: url('./media/images/wallpaper2.jpeg');">
+        <div class="container mx-auto h-full flex items-center justify-center">
+            <div class="bg-white p-4 rounded-lg shadow-lg z-50 ">
+                <h1 class="text-4xl font-bold mb-4">BOOK AN APPOINTMENT</h1>
+                <form class="mt-2">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="patientName">Patient's Name</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="text" id="patientName" name="patientName" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2">Sex</label>
+                            <div class="space-x-4">
+                                <label class="inline-flex items-center">
+                                    <input class="form-radio text-blue-600" type="radio" name="sex" value="male">
+                                    <span class="ml-2">Male</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input class="form-radio text-blue-600" type="radio" name="sex" value="female">
+                                    <span class="ml-2">Female</span>
+                                </label>
+                                <label class="inline-flex items-center">
+                                    <input class="form-radio text-blue-600" type="radio" name="sex" value="other">
+                                    <span class="ml-2">Other</span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="contactNo">Contact No</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="text" id="contactNo" name="contactNo" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="idNumber">ID Number</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="text" id="idNumber" name="idNumber" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="address">Address</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="text" id="address" name="address" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="email">Email</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="email" id="email" name="email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="dateOfBirth">Date Of Birth</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="date" id="dateOfBirth" name="dateOfBirth" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="preferredDate">Preferred Date</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="date" id="preferredDate" name="preferredDate" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="preferredTime">Preferred Time</label>
+                            <input class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" type="time" id="preferredTime" name="preferredTime" required>
+                        </div>
+                        <div class="mb-4">
+                            <label class="block text-gray-800 text-sm font-semibold mb-2" for="department">Department</label>
+                            <select class="border rounded-lg py-2 px-3 w-full focus:outline-none focus:border-blue-600" id="department" name="department" required>
+                                <option value="">Select Department</option>
+                                <option value="general">General</option>
+                                <option value="pediatrics">Pediatrics</option>
+                                <option value="surgery">Surgery</option>
+                                <!-- more options -->
+                            </select>
+                        </div>
+                    </div>
+                    <div class="mt-6 flex items-center justify-center" >
+                        <button class="bg-blue-600 text-white py-2 px-4 rounded-lg hover:bg-blue-700" type="submit">Submit</button>
+                        <button class="bg-gray-400 text-gray-800 py-2 px-4 rounded-lg ml-2 hover:bg-gray-500" type="reset">Cancel</button>
+                    </div>
+                </form>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT section  -->
+    <section class=" py-16 bg-gray-100" id="about-us">
+        <div class="container mx-auto">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-gray-800 mb-4">About Us</h2>
+                <p class="text-gray-600 mb-8">Providing Quality Healthcare with Compassion</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Left Column - Introduction -->
+                <div class="mb-6 md:mb-0">
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Our Story</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Copains Referral Hospital has been serving the community since its establishment in 1985. Over the years, we have grown to become a leading healthcare institution dedicated to providing comprehensive medical services with a focus on patient-centered care.
+                    </p>
+                </div>
+                
+                <!-- Right Column - Mission and Vision -->
+                <div>
+                    <h3 class="text-xl font-bold text-blue-600 mb-4">Mission & Vision</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        Our mission is to improve the health and well-being of our patients by delivering high-quality, compassionate healthcare services. We envision a healthier community where every individual has access to excellent medical care when they need it.
+                    </p>
+                </div>
+            </div>
+    
+            <!-- Values -->
+            <div class="mt-10">
+                <h3 class="text-xl font-bold text-blue-600 mb-4">Our Values</h3>
+                <ul class="list-disc list-inside text-gray-700">
+                    <li>Compassion - We treat every patient with kindness and empathy.</li>
+                    <li>Integrity - We uphold the highest ethical standards in all our actions.</li>
+                    <li>Excellence - We strive for excellence in patient care and clinical outcomes.</li>
+                    <li>Patient-Centered - We prioritize the needs and preferences of our patients.</li>
+                </ul>
+            </div>
+    
+            <!-- Team -->
+            <div class="mt-10">
+                <h3 class="text-xl font-bold text-blue-600 mb-4">Our Leadership Team</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <!-- member -->
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./media/images/doc-l.png" alt="CEO" class="rounded-full h-24 w-24 mx-auto mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 flex items-center justify-center">Dr. Simon Wachira</h4>
+                        <p class="text-sm text-gray-600 font-semibold  flex justify-center">CEO</p>
+                        <p class="text-gray-700 mt-2">
+                            Dr. Simon Wachira leads our hospital with a vision for excellence in patient care and healthcare innovation.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./media/images/doc1.jpg" alt="CEO" class="rounded-full h-24 w-24 mx-auto mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 flex items-center justify-center">Dr. Paul Wanjema</h4>
+                        <p class="text-sm text-gray-600 font-semibold flex items-center justify-center">Senior Doctor</p>
+                        <p class="text-gray-700 mt-2">
+                            Dr. Paul Wanjema leads our hospital with a vision for excellence in patient care and healthcare innovation.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./media/images/doc-l.png" alt="CEO" class="rounded-full h-24 w-24 mx-auto mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 flex items-center justify-center">Dr. Salome Wachira</h4>
+                        <p class="text-sm text-gray-600 font-semibold flex items-center justify-center">CEO</p>
+                        <p class="text-gray-700 mt-2">
+                            Dr. Salome Wachira leads our hospital with a vision for excellence in patient care and healthcare innovation.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./media/images/doc-l.png" alt="CEO" class="rounded-full h-24 w-24 mx-auto mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 flex items-center justify-center">Dr. Tiffany Mikes</h4>
+                        <p class="text-sm text-gray-600 font-semibold flex items-center justify-center">CEO</p>
+                        <p class="text-gray-700 mt-2">
+                            Dr. Tiffany Mikes leads our hospital with a vision for excellence in patient care and healthcare innovation.
+                        </p>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+                        <img src="./media/images/doc-l.png" alt="CEO" class="rounded-full h-24 w-24 mx-auto mb-4">
+                        <h4 class="text-lg font-bold text-gray-800 flex items-center justify-center">Dr.Eunice Yuny </h4>
+                        <p class="text-sm text-gray-600 font-semibold flex items-center justify-center">CEO</p>
+                        <p class="text-gray-700 mt-2">
+                            Dr.Eunice Yuny leads our hospital with a vision for excellence in patient care and healthcare innovation.
+                        </p>
+                    </div>
+                    <div class="bg-gray-200 p-4 rounded-lg shadow-md flex items-center justify-center">
+                        <div class="flex items-center justify-center">
+                            <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded flex items-center justify-center">
+                                See More Doctors
+                            </button>
+                        </div>
+                    </div>
+                    <!--more team members -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- events section  -->
+    
+    
+</body>
+</html>
