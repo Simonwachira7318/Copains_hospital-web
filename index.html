@@ -35,7 +35,7 @@
         </header>
 
         <!-- Homepage Section with image -->
-        <section class=" mt-10 h-screen">
+        <section class="mt-10 h-screen">
             <span class="p-4 mb-6"></span>
             <div class="container mx-auto h-full flex items-center justify-center flex-wrap">
                 <div class="bg-blue-100 p-4 rounded-lg shadow-xl h-auto">
@@ -113,7 +113,6 @@
             </div>
         </section>
     </div>
-
     <div class="app-content" id="app-content">
             <!-- ABOUT section  -->
     <section class=" py-16 bg-blue-100" id="about-us">
@@ -452,14 +451,17 @@
         </div>
     </div>
 </footer>
-    <!-- Loader (centered) -->
-    <div id="loader" class="fixed top-0 left-0 flex items-center justify-center w-full h-full bg-blue-200 opacity-70 z-50 hidden">
-        <div class="animate-spin rounded-full h-100 w-100 border-t-2 border-b-2 border-blue-600"></div>
+    <!-- Loader (initially hidden) -->
+    <div id="loader" class="fixed top-0 left-0 right-0 bottom-0 mx-auto flex items-center justify-center bg-blue-100 opacity-75 z-50" style="display: none;">
+        <div class="animate-spin mt-20 items-center justify-center flex">
+            <img class="m-10" height="100px" width="100px" src="./media/loader1 (1).png" alt="loading"/>
+        </div>
       </div>
+  
       
 
         <script>
-            // your-script.js
+            // script.js
         document.addEventListener("DOMContentLoaded", function () {
         // Function to show the loader
         function showLoader() {
@@ -471,15 +473,14 @@
             document.getElementById("loader").style.display = "none";
         }
 
-        // Example: Simulate loading for 2 seconds when a button is clicked
+        // loading for seconds when a button is clicked
         document.getElementById("navigate-button").addEventListener("click", function () {
             showLoader(); // Show the loader
 
-            // Simulate loading for 2 seconds (adjust as needed)
+            // Simulate loading for seconds
             setTimeout(function () {
-            hideLoader(); // Hide the loader after 2 seconds
-            // Implement your navigation logic here
-            }, 1000);
+            hideLoader(); // Hide the loader
+            }, 500);
         });
         });
 
